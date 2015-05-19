@@ -90,8 +90,12 @@
       </table>
       <br>
       <div class="button-row">
+        ~[if.~[gpv:id]>0]
+          <input class="deleteCB hide" type="checkbox" name="DC-:0.U_NOTIFICATIONS.U_NOTIFICATIONS:~[gpv:id]"> 
+        [/if]
         <input type="hidden" name="ac" value="prim">~[if.~[gpv:id]>0]
-        <a class="button" id="btnDelete">~[text:psx.htmlc.admin_tech_notifications.edit.delete]</a>[/if]
+        <a class="button" id="btnDelete">~[text:psx.htmlc.admin_tech_notifications.edit.delete]</a>
+[/if]
         <a class="button" href="list.html">~[text:psx.htmlc.admin_tech_notifications.edit.cancel]</a>
         <a class="button" id="btnSubmit">~[text:psx.htmlc.admin_tech_notifications.edit.submit]</a>
       </div>
@@ -105,6 +109,11 @@
       id: "~[gpv:id]"
     };
     notifier.loadEdit();
+
+    $j('#submitButton').click(function() {
+      $j('#_cb').remove();
+      $j('#notification').submit();
+    });
   </script>
 </body>
 </html>
