@@ -1,0 +1,5 @@
+<link href="/scripts/notifications/css/notifier.css" rel="stylesheet">
+<script src="/scripts/notifications/js/notifier.js"></script>
+<script>
+  notifier.displaySubs();
+</script>

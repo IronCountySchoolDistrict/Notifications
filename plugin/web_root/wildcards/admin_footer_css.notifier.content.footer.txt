@@ -1,0 +1,6 @@
+<link href="/notifications/css/notifier.css" rel="stylesheet">
+<script src="/notifications/js/notifier.js"></script>
+
+<script>
+  notifier.displayAdmin();
+</script>

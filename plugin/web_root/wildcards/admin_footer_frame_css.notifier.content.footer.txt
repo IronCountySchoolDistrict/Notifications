@@ -1,4 +1,4 @@
-<link href="/images/css/notifier.css" rel="stylesheet">
+<link href="/scripts/notifications/css/notifier.css" rel="stylesheet">
 <script src="/scripts/notifier.js"></script>
 <script>
   notifier.displayAdmin();
