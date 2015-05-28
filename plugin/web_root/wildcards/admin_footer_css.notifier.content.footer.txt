@@ -1,5 +1,5 @@
-<link href="/notifications/css/notifier.css" rel="stylesheet">
-<script src="/notifications/js/notifier.js"></script>
+<link href="<%= img_srv_url %>/scripts/notifications/css/notifier.css" rel="stylesheet">
+<script src="<%= img_srv_url %>/scripts/notifications/js/notifier.js"></script>
 
 <script>
   notifier.displayAdmin();
