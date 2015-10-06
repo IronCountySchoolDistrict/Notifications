@@ -3,8 +3,8 @@
 <head>
   <title>~[text:psx.htmlc.admin_tech_notifications.edit.edit_notification]</title>
   ~[wc:commonscripts]
-  <link href="<!-- @echo IMAGE_SERVER_URL -->/images/css/screen.css" rel="stylesheet" media="screen">
-  <link href="<!-- @echo IMAGE_SERVER_URL -->/images/css/print.css" rel="stylesheet" media="print">
+  <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+  <link href="/images/css/print.css" rel="stylesheet" media="print">
 </head>
 <body>
   <form action="list.html" method="POST" id="notification">
@@ -90,7 +90,7 @@
       </table>
       <br>
       <div class="button-row">
-        
+
         <input type="hidden" name="ac" value="prim">~[if.~[gpv:id]>0]
         <a class="button" id="btnDelete">~[text:psx.htmlc.admin_tech_notifications.edit.delete]</a>
 [/if]
@@ -101,7 +101,7 @@
     <br>~[wc:admin_footer_css]
   </form>
    ~[if.~[gpv:id]>0]
-          <input class="deleteCB hide" type="checkbox" name="DC-:0.U_NOTIFICATIONS.U_NOTIFICATIONS:~[gpv:id]"> 
+          <input class="deleteCB hide" type="checkbox" name="DC-:0.U_NOTIFICATIONS.U_NOTIFICATIONS:~[gpv:id]">
         [/if]
   <form id="deleteRecord" action="list.html" method="POST">
 

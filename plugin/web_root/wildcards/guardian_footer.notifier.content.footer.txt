@@ -1,5 +1,5 @@
-<link href="<!-- @echo IMAGE_SERVER_URL -->/notifications/css/notifier.css" rel="stylesheet">
-<script src="<!-- @echo IMAGE_SERVER_URL -->/notifications/js/notifier.js"></script>
+<link href="/scripts/notifications/css/notifier.css" rel="stylesheet">
+<script src="/scripts/notifications/js/notifier.js"></script>
 <script>
   notifier.displayGuardian();
 </script>
