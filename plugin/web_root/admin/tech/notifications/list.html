@@ -40,7 +40,9 @@
     <br>~[wc:admin_footer_css]
   </form>
   <script>
-    notifier.populateList();
+    require(['notifier'], function(notifierModule) {
+      notifierModule.notifier.populateList();
+    });
   </script>
 </body>
 </html>

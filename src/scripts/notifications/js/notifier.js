@@ -3,7 +3,7 @@
  * Global Namespace for project
  * @namespace
  */
-var notifier = {
+ export let notifier = {
     interval: 15000,
 
     /**

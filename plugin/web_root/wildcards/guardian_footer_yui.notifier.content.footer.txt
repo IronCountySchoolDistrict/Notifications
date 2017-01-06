@@ -1,5 +1,12 @@
 <link href="/scripts/notifications/css/notifier.css" rel="stylesheet">
-<script src="/scripts/notifications/js/notifier.js"></script>
 <script>
-  notifier.displayGuardian();
+  require.config({
+    paths: {
+      notifier: '/scripts/notifications/js/notifier'
+    }
+  });
+
+  require(['notifier'], function(notifierModule) {
+    notifierModule.notifier.displayGuardian();
+  })
 </script>

@@ -96,6 +96,7 @@
 [/if]
         <a class="button" href="list.html">~[text:psx.htmlc.admin_tech_notifications.edit.cancel]</a>
         <a class="button" id="btnSubmit">~[text:psx.htmlc.admin_tech_notifications.edit.submit]</a>
+        <input type="hidden" name="frn" value="0010" />
       </div>
     </div>
     <br>~[wc:admin_footer_css]
@@ -107,15 +108,18 @@
 
   </form>
   <script>
-    notifier.options = {
-      id: "~[gpv:id]"
-    };
-    notifier.loadEdit();
+    require(['notifier'], function(notifierModule) {
+      notifierModule.notifier.options = {
+        id: "~[gpv:id]"
+      };
+      notifierModule.notifier.loadEdit();
 
-    $j('#submitButton').click(function() {
-      $j('#_cb').remove();
-      $j('#notification').submit();
+      $j('#submitButton').click(function() {
+        $j('#_cb').remove();
+        $j('#notification').submit();
+      });
     });
+
   </script>
 </body>
 </html>
